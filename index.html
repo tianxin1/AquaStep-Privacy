@@ -3,30 +3,61 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Privacy Policy - AquaStep</title>
+    <title>AquaStep - Walk to Build Your Ocean</title>
     <style>
-        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; line-height: 1.6; color: #333; max-width: 800px; margin: 40px auto; padding: 0 20px; }
-        h1 { color: #007AFF; }
-        h2 { border-bottom: 1px solid #eee; padding-bottom: 10px; margin-top: 30px; }
-        .footer { margin-top: 50px; font-size: 0.8em; color: #888; }
+        :root { --primary: #007AFF; --bg: #f5f7fa; }
+        body { font-family: -apple-system, system-ui, sans-serif; margin: 0; background: var(--bg); color: #333; display: flex; flex-direction: column; align-items: center; }
+        
+        /* 顶部装饰区 */
+        .hero { background: linear-gradient(180deg, #e0f2ff 0%, #ffffff 100%); width: 100%; padding: 60px 20px; text-align: center; }
+        .app-icon { width: 120px; height: 120px; border-radius: 28px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); margin-bottom: 20px; }
+        h1 { font-size: 2.5rem; margin: 10px 0; color: #1d1d1f; }
+        .tagline { font-size: 1.2rem; color: #666; max-width: 600px; margin: 0 auto 30px; }
+
+        /* 特性区 */
+        .features { max-width: 900px; display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; padding: 40px 20px; }
+        .card { background: white; padding: 25px; border-radius: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); text-align: center; }
+        .card h3 { color: var(--primary); margin-top: 0; }
+
+        /* 底部 */
+        footer { margin-top: auto; padding: 40px; font-size: 0.9rem; color: #999; text-align: center; }
+        footer a { color: var(--primary); text-decoration: none; margin: 0 10px; }
+        
+        .download-btn { background: #000; color: #fff; padding: 15px 30px; border-radius: 50px; text-decoration: none; font-weight: bold; transition: transform 0.2s; }
+        .download-btn:hover { transform: scale(1.05); }
     </style>
 </head>
 <body>
-    <h1>Privacy Policy for AquaStep</h1>
-    <p>Last Updated: March 16, 2026</p>
 
-    <h2>1. Overview</h2>
-    <p>AquaStep ("the App") is a minimalist pedometer tool. We value your privacy and do not collect, store, or share any personal information.</p>
+    <div class="hero">
+        <img src="https://tianxin1.github.io/AquaStep-Privacy/icon.png" alt="AquaStep Icon" class="app-icon" onerror="this.style.display='none'">
+        <h1>AquaStep</h1>
+        <p class="tagline">Every step you take brings life to a stunning 3D watercolor ocean.</p>
+        <a href="#" class="download-btn">Coming Soon on App Store</a>
+    </div>
 
-    <h2>2. HealthKit Data</h2>
-    <p>AquaStep requests access to Apple's HealthKit (Step count) solely to drive the 3D underwater visual experience. This data is processed in real-time on your device and is <strong>never</strong> uploaded to any servers or shared with third parties.</p>
+    <div class="features">
+        <div class="card">
+            <h3>🎨 Artistic Wonder</h3>
+            <p>Explore a hand-drawn coral reef with rare species like the vibrant Mandarin Dragonet.</p>
+        </div>
+        <div class="card">
+            <h3>🌊 3D Depth</h3>
+            <p>Immerse yourself in a multi-layered underwater world that responds to your activity.</p>
+        </div>
+        <div class="card">
+            <h3>🔒 Privacy First</h3>
+            <p>No tracking, no data collection. Your fitness data stays local and secure.</p>
+        </div>
+    </div>
 
-    <h2>3. No Ads & No Tracking</h2>
-    <p>The App does not use any advertising SDKs or third-party tracking tools. Your activity remains private.</p>
+    <footer>
+        <p>© 2026 AquaStep. All rights reserved.</p>
+        <p>
+            <a href="Privacy.html">Privacy Policy</a> | 
+            <a href="mailto:你的邮箱">Support</a>
+        </p>
+    </footer>
 
-    <h2>4. Contact</h2>
-    <p>For questions regarding this policy, please contact us at: <strong>[你的联系邮箱]</strong></p>
-
-    <div class="footer">© 2026 AquaStep Team. All rights reserved.</div>
 </body>
 </html>
