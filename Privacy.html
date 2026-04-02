@@ -1,32 +1,161 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Privacy Policy - AquaStep</title>
-    <style>
-        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; line-height: 1.6; color: #333; max-width: 800px; margin: 40px auto; padding: 0 20px; }
-        h1 { color: #007AFF; }
-        h2 { border-bottom: 1px solid #eee; padding-bottom: 10px; margin-top: 30px; }
-        .footer { margin-top: 50px; font-size: 0.8em; color: #888; }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy - AquaStep</title>
+  <style>
+    :root {
+      --bg: #0f172a;
+      --panel: #111827;
+      --text: #e5e7eb;
+      --muted: #94a3b8;
+      --accent: #67e8f9;
+      --border: rgba(255,255,255,0.08);
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Helvetica Neue", sans-serif;
+      background:
+        radial-gradient(circle at top left, rgba(103,232,249,0.12), transparent 30%),
+        linear-gradient(180deg, #0b1020 0%, #111827 100%);
+      color: var(--text);
+      line-height: 1.7;
+    }
+
+    .wrap {
+      max-width: 820px;
+      margin: 0 auto;
+      padding: 56px 20px 80px;
+    }
+
+    .card {
+      background: rgba(17, 24, 39, 0.82);
+      backdrop-filter: blur(10px);
+      border: 1px solid var(--border);
+      border-radius: 24px;
+      padding: 32px 24px;
+      box-shadow: 0 20px 60px rgba(0, 0, 0, 0.28);
+    }
+
+    h1 {
+      margin: 0 0 8px;
+      font-size: 2rem;
+      line-height: 1.15;
+    }
+
+    h2 {
+      margin-top: 32px;
+      margin-bottom: 10px;
+      font-size: 1.1rem;
+      color: var(--accent);
+    }
+
+    p, li {
+      color: var(--text);
+      font-size: 1rem;
+    }
+
+    .muted {
+      color: var(--muted);
+      margin-bottom: 20px;
+    }
+
+    a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    .footer {
+      margin-top: 28px;
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+  </style>
 </head>
 <body>
-    <h1>Privacy Policy for AquaStep</h1>
-    <p>Last Updated: March 16, 2026</p>
+  <main class="wrap">
+    <section class="card">
+      <h1>Privacy Policy for AquaStep</h1>
+      <p class="muted">Last Updated: April 2, 2026</p >
 
-    <h2>1. Overview</h2>
-    <p>AquaStep ("the App") is a minimalist pedometer tool. We value your privacy and do not collect, store, or share any personal information.</p>
+      <h2>1. Overview</h2>
+      <p>
+        AquaStep ("the App") is a wellness-oriented step companion designed to turn everyday walking
+        into a calm, restorative experience. We value your privacy and aim to keep your data use as
+        minimal and transparent as possible.
+      </p >
 
-    <h2>2. HealthKit Data</h2>
-    <p>AquaStep requests access to Apple's HealthKit (Step count) solely to drive the 3D underwater visual experience. This data is processed in real-time on your device and is <strong>never</strong> uploaded to any servers or shared with third parties.</p>
+      <h2>2. HealthKit and Motion Data</h2>
+      <p>
+        AquaStep may request access to Apple HealthKit step count data and motion data in order to
+        power core in-app features, such as step tracking, progress updates, and the underwater
+        visual experience.
+      </p >
+      <p>
+        HealthKit step count data is processed on your device for app functionality. AquaStep does
+        not write health data to HealthKit.
+      </p >
 
-    <h2>3. No Ads & No Tracking</h2>
-    <p>The App does not use any advertising SDKs or third-party tracking tools. Your activity remains private.</p>
+      <h2>3. Analytics</h2>
+      <p>
+        AquaStep uses Firebase Analytics to understand app usage and improve product experience.
+        Analytics data may include app launches, screen views, feature interactions, device-level
+        information, and general usage events.
+      </p >
+      <p>
+        This analytics data is used to help us understand how the App is used, monitor feature
+        engagement, and improve stability and usability over time.
+      </p >
 
-    <h2>4. Contact</h2>
-    <p>For questions regarding this policy, please contact us at: <strong>[liudonglin1256@gmail.com]</strong></p>
+      <h2>4. Data Sharing</h2>
+      <p>
+        We do not sell your personal data. We do not use your HealthKit step count data for
+        advertising.
+      </p >
+      <p>
+        Some app usage data may be processed by our analytics service provider, Firebase, in order
+        to deliver analytics functionality.
+      </p >
 
-    <div class="footer">© 2026 AquaStep Team. All rights reserved.</div>
+      <h2>5. Advertising and Tracking</h2>
+      <p>
+        AquaStep does not use advertising SDKs to serve personalized ads. AquaStep is not designed
+        to track you across third-party apps or websites for advertising purposes.
+      </p >
+
+      <h2>6. Local Storage</h2>
+      <p>
+        AquaStep may store certain app data locally on your device, such as settings, progress,
+        unlocked content, and interface state, so the App can function properly and preserve your
+        experience between sessions.
+      </p >
+
+      <h2>7. Your Choices</h2>
+      <ul>
+        <li>You can choose whether to grant HealthKit and motion access.</li>
+        <li>You can stop using the App or revoke permissions at any time in iOS Settings.</li>
+      </ul>
+
+      <h2>8. Contact</h2>
+      <p>
+        If you have any questions about this Privacy Policy, please contact:
+        <a href=" ">liudonglin1256@gmail.com</a >
+      </p >
+
+      <p class="footer">© 2026 AquaStep Team. All rights reserved.</p >
+    </section>
+  </main>
 </body>
 </html>
