@@ -3,159 +3,344 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Privacy Policy - AquaStep</title>
-  <style>
-    :root {
-      --bg: #0f172a;
-      --panel: #111827;
-      --text: #e5e7eb;
-      --muted: #94a3b8;
-      --accent: #67e8f9;
-      --border: rgba(255,255,255,0.08);
-    }
-
-    * { box-sizing: border-box; }
-
-    body {
-      margin: 0;
-      font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Helvetica Neue", sans-serif;
-      background:
-        radial-gradient(circle at top left, rgba(103,232,249,0.12), transparent 30%),
-        linear-gradient(180deg, #0b1020 0%, #111827 100%);
-      color: var(--text);
-      line-height: 1.7;
-    }
-
-    .wrap {
-      max-width: 820px;
-      margin: 0 auto;
-      padding: 56px 20px 80px;
-    }
-
-    .card {
-      background: rgba(17, 24, 39, 0.82);
-      backdrop-filter: blur(10px);
-      border: 1px solid var(--border);
-      border-radius: 24px;
-      padding: 32px 24px;
-      box-shadow: 0 20px 60px rgba(0, 0, 0, 0.28);
-    }
-
-    h1 {
-      margin: 0 0 8px;
-      font-size: 2rem;
-      line-height: 1.15;
-    }
-
-    h2 {
-      margin-top: 32px;
-      margin-bottom: 10px;
-      font-size: 1.1rem;
-      color: var(--accent);
-    }
-
-    p, li {
-      color: var(--text);
-      font-size: 1rem;
-    }
-
-    .muted {
-      color: var(--muted);
-      margin-bottom: 20px;
-    }
-
-    a {
-      color: var(--accent);
-      text-decoration: none;
-    }
-
-    a:hover {
-      text-decoration: underline;
-    }
-
-    ul {
-      padding-left: 20px;
-    }
-
-    .footer {
-      margin-top: 28px;
-      color: var(--muted);
-      font-size: 0.95rem;
-    }
-  </style>
+  <meta
+    name="description"
+    content="AquaStep is a calm iPhone pedometer that turns daily walking into a hand-drawn underwater sanctuary."
+  />
+  <title>AquaStep | Step into the Deep Blue</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500&family=Manrope:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="./styles.css" />
 </head>
 <body>
-  <main class="wrap">
-    <section class="card">
-      <h1>Privacy Policy for AquaStep</h1>
-      <p class="muted">Last Updated: April 2, 2026</p >
+  <div class="page-shell">
+    <header class="topbar">
+      <a class="brand" href="#hero" aria-label="AquaStep home">
+        <img src="./app-icon.png" alt="AquaStep app icon" class="brand__icon" />
+        <span>AquaStep</span>
+      </a>
 
-      <h2>1. Overview</h2>
-      <p>
-        AquaStep ("the App") is a wellness-oriented step companion designed to turn everyday walking
-        into a calm, restorative experience. We value your privacy and aim to keep your data use as
-        minimal and transparent as possible.
-      </p >
+      <nav class="topbar__nav" aria-label="Primary">
+        <a href="#features">Features</a>
+        <a href="#highlights">Highlights</a>
+        <a href="#reviews">Reviews</a>
+        <a href="#privacy">Privacy</a>
+      </nav>
 
-      <h2>2. HealthKit and Motion Data</h2>
-      <p>
-        AquaStep may request access to Apple HealthKit step count data and motion data in order to
-        power core in-app features, such as step tracking, progress updates, and the underwater
-        visual experience.
-      </p >
-      <p>
-        HealthKit step count data is processed on your device for app functionality. AquaStep does
-        not write health data to HealthKit.
-      </p >
+      <a
+        class="button button--ghost"
+        href="https://apps.apple.com/us/app/aquastep/id6760325299"
+        target="_blank"
+        rel="noreferrer"
+      >
+        App Store
+      </a>
+    </header>
 
-      <h2>3. Analytics</h2>
-      <p>
-        AquaStep uses Firebase Analytics to understand app usage and improve product experience.
-        Analytics data may include app launches, screen views, feature interactions, device-level
-        information, and general usage events.
-      </p >
-      <p>
-        This analytics data is used to help us understand how the App is used, monitor feature
-        engagement, and improve stability and usability over time.
-      </p >
+    <main>
+      <section class="hero" id="hero">
+        <div class="hero__copy">
+          <p class="eyebrow">A Pedometer for the Aesthetic</p>
+          <h1>Step into the Deep Blue.</h1>
+          <p class="hero__lede">
+            AquaStep turns your daily walking into a living ocean scene. Instead of charts,
+            pressure, and noisy gamification, you get a soft underwater world that grows
+            calmer, fuller, and more beautiful with every step.
+          </p>
 
-      <h2>4. Data Sharing</h2>
-      <p>
-        We do not sell your personal data. We do not use your HealthKit step count data for
-        advertising.
-      </p >
-      <p>
-        Some app usage data may be processed by our analytics service provider, Firebase, in order
-        to deliver analytics functionality.
-      </p >
+          <div class="hero__actions">
+            <a
+              class="button button--primary"
+              href="https://apps.apple.com/us/app/aquastep/id6760325299"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Download for iPhone
+            </a>
+            <a class="button button--secondary" href="#features">Explore the app</a>
+          </div>
 
-      <h2>5. Advertising and Tracking</h2>
-      <p>
-        AquaStep does not use advertising SDKs to serve personalized ads. AquaStep is not designed
-        to track you across third-party apps or websites for advertising purposes.
-      </p >
+          <div class="hero__stats" aria-label="AquaStep quick facts">
+            <article>
+              <strong>5.0</strong>
+              <span>App Store rating</span>
+            </article>
+            <article>
+              <strong>19</strong>
+              <span>ratings so far</span>
+            </article>
+            <article>
+              <strong>1.0.2</strong>
+              <span>latest version</span>
+            </article>
+          </div>
 
-      <h2>6. Local Storage</h2>
-      <p>
-        AquaStep may store certain app data locally on your device, such as settings, progress,
-        unlocked content, and interface state, so the App can function properly and preserve your
-        experience between sessions.
-      </p >
+          <ul class="hero__meta" aria-label="Highlights">
+            <li>Only for iPhone</li>
+            <li>Widget support</li>
+            <li>iOS 17.0+</li>
+            <li>English + Simplified Chinese</li>
+          </ul>
+        </div>
 
-      <h2>7. Your Choices</h2>
-      <ul>
-        <li>You can choose whether to grant HealthKit and motion access.</li>
-        <li>You can stop using the App or revoke permissions at any time in iOS Settings.</li>
-      </ul>
+        <div class="hero__visual" aria-hidden="true">
+          <div class="phone">
+            <div class="phone__frame"></div>
+            <div class="phone__notch"></div>
+            <div class="phone__screen">
+              <div class="widget-card">
+                <img src="./clownfish.png" alt="" class="widget-card__fish" />
+                <div class="widget-card__stats">
+                  <span class="widget-card__steps">8,606</span>
+                  <span class="widget-card__label">steps today</span>
+                  <div class="widget-card__bar">
+                    <span></span>
+                  </div>
+                  <span class="widget-card__goal">quiet progress, fully reached</span>
+                </div>
+              </div>
 
-      <h2>8. Contact</h2>
-      <p>
-        If you have any questions about this Privacy Policy, please contact:
-        <a href=" ">liudonglin1256@gmail.com</a >
-      </p >
+              <div class="ocean-layers">
+                <div class="ocean-layer ocean-layer--glow"></div>
+                <div class="ocean-layer ocean-layer--sunrise"></div>
+                <div class="ocean-layer ocean-layer--sand"></div>
+                <div class="ocean-layer ocean-layer--reef"></div>
+              </div>
 
-      <p class="footer">© 2026 AquaStep Team. All rights reserved.</p >
-    </section>
-  </main>
+              <img src="./jellyfish.png" alt="" class="floaty floaty--jellyfish" />
+              <img src="./seahorse.png" alt="" class="floaty floaty--seahorse" />
+              <img src="./sea-turtle.png" alt="" class="floaty floaty--turtle" />
+
+              <div class="screen-copy">
+                <p>Walk towards peace</p>
+                <span>Gentle goals. Hand-drawn marine life. A private reef that grows with you.</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero-glow hero-glow--one"></div>
+          <div class="hero-glow hero-glow--two"></div>
+        </div>
+      </section>
+
+      <section class="feature-strip" id="features">
+        <article class="feature-card">
+          <p class="feature-card__tag">Visual depth</p>
+          <h2>A real sanctuary, not a dashboard</h2>
+          <p>
+            AquaStep uses layered underwater scenes to make the app feel alive, immersive,
+            and restorative whenever you open it.
+          </p>
+        </article>
+        <article class="feature-card">
+          <p class="feature-card__tag">Step-powered</p>
+          <h2>Your movement adds life</h2>
+          <p>
+            Daily walking fills the reef with more presence, animation, and marine companions,
+            turning progress into something you want to revisit.
+          </p>
+        </article>
+        <article class="feature-card">
+          <p class="feature-card__tag">Minimal & calm</p>
+          <h2>Health tracking without pressure</h2>
+          <p>
+            The experience stays light and quiet, replacing aggressive charts with a softer
+            sense of momentum.
+          </p>
+        </article>
+      </section>
+
+      <section class="highlights" id="highlights">
+        <div class="section-heading">
+          <p class="eyebrow">What makes it special</p>
+          <h2>Built like a product page, felt like a world.</h2>
+          <p>
+            The App Store listing highlights the parts people keep coming back for: layered
+            underwater visuals, dynamic time-based color, a new home screen widget, and a
+            design that feels more peaceful than most fitness apps.
+          </p>
+        </div>
+
+        <div class="highlight-grid">
+          <article class="highlight-card highlight-card--wide">
+            <div>
+              <p class="highlight-card__eyebrow">Latest update</p>
+              <h3>Version 1.0.2 brings AquaStep to the home screen.</h3>
+              <p>
+                The newest release adds a watercolor widget for step tracking, improves the
+                seahorse animation, and includes polish for a smoother experience.
+              </p>
+            </div>
+            <div class="mini-widget" aria-hidden="true">
+              <span>Widget</span>
+              <strong>7,420</strong>
+              <small>steps / calm blue shift</small>
+            </div>
+          </article>
+
+          <article class="highlight-card">
+            <p class="highlight-card__eyebrow">Time-based moods</p>
+            <h3>From golden dawn to deep midnight.</h3>
+            <p>
+              Your ocean shifts its palette throughout the day, so progress feels tied to a
+              living environment rather than a static screen.
+            </p>
+          </article>
+
+          <article class="highlight-card">
+            <p class="highlight-card__eyebrow">Private by default</p>
+            <h3>No ads. No tracking. No data collected.</h3>
+            <p>
+              The App Store privacy section states that the developer does not collect data
+              from this app, keeping the experience focused and respectful.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="creatures">
+        <div class="section-heading">
+          <p class="eyebrow">Marine friends</p>
+          <h2>Meet the ocean you grow.</h2>
+          <p>
+            Hand-drawn creatures give the app its personality, turning routine step counts
+            into a more emotional and memorable daily ritual.
+          </p>
+        </div>
+
+        <div class="creature-grid">
+          <article class="creature-card">
+            <img src="./jellyfish.png" alt="Moon Jellyfish" />
+            <h3>Moon Jellyfish</h3>
+            <p>Soft, luminous, and perfectly matched to the app's slower pace.</p>
+          </article>
+          <article class="creature-card">
+            <img src="./seahorse.png" alt="Seahorse" />
+            <h3>Seahorse</h3>
+            <p>Recently refreshed with smoother, cozier animation in version 1.0.2.</p>
+          </article>
+          <article class="creature-card">
+            <img src="./sea-turtle.png" alt="Sea Turtle" />
+            <h3>Sea Turtle</h3>
+            <p>Slow, graceful motion reinforces the meditative feel of the product.</p>
+          </article>
+          <article class="creature-card creature-card--accent">
+            <img src="./yellow-tang.png" alt="Yellow Tang" />
+            <h3>Yellow Tang</h3>
+            <p>A bright addition from a recent update, adding a flash of sunlight underwater.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="story" id="reviews">
+        <div class="story__panel">
+          <p class="eyebrow">Why people keep opening it</p>
+          <h2>Walking starts to feel more like meditation.</h2>
+          <p>
+            AquaStep is clearly positioned for users who want a softer health app. It tracks
+            steps, but the emotional hook is the atmosphere: quiet movement, visual reward,
+            and an ocean that feels personal instead of competitive.
+          </p>
+        </div>
+
+        <div class="story__quote">
+          <p>
+            Users describe it as a beautiful step tracker that feels calming, private, and
+            surprisingly easy to return to every day.
+          </p>
+          <span>Paraphrased from App Store reviews</span>
+        </div>
+      </section>
+
+      <section class="specs">
+        <div class="section-heading">
+          <p class="eyebrow">App details</p>
+          <h2>Ready for a clean, credible launch page.</h2>
+        </div>
+
+        <div class="spec-grid">
+          <article class="spec-card">
+            <span>Platform</span>
+            <strong>iPhone</strong>
+          </article>
+          <article class="spec-card">
+            <span>Category</span>
+            <strong>Health & Fitness</strong>
+          </article>
+          <article class="spec-card">
+            <span>Size</span>
+            <strong>27.9 MB</strong>
+          </article>
+          <article class="spec-card">
+            <span>Languages</span>
+            <strong>EN + Simplified Chinese</strong>
+          </article>
+        </div>
+      </section>
+
+      <section class="privacy" id="privacy">
+        <div class="privacy__copy">
+          <p class="eyebrow">Privacy</p>
+          <h2>Your step data powers the experience, not the noise.</h2>
+          <p>
+            This page can confidently communicate AquaStep as a minimal, privacy-aware
+            product. The App Store privacy section currently states that the app does not
+            collect data.
+          </p>
+        </div>
+
+        <div class="privacy__actions">
+          <a
+            class="button button--secondary"
+            href="https://tianxin1.github.io/AquaStep-Privacy/Privacy.html"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Read Privacy Policy
+          </a>
+          <a
+            class="button button--ghost"
+            href="https://apps.apple.com/us/app/aquastep/id6760325299"
+            target="_blank"
+            rel="noreferrer"
+          >
+            See App Store Listing
+          </a>
+        </div>
+      </section>
+
+      <section class="cta">
+        <p class="eyebrow">Available now</p>
+        <h2>Turn every walk into a quieter daily ritual.</h2>
+        <p>
+          A beautiful product deserves a focused landing page. This one now frames AquaStep
+          as a premium-feeling, calming app experience that matches its App Store identity.
+        </p>
+        <a
+          class="button button--primary"
+          href="https://apps.apple.com/us/app/aquastep/id6760325299"
+          target="_blank"
+          rel="noreferrer"
+        >
+          Download AquaStep
+        </a>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div>
+        <strong>AquaStep</strong>
+        <span>Step into the Deep Blue.</span>
+      </div>
+      <div class="footer__links">
+        <a href="https://apps.apple.com/us/app/aquastep/id6760325299" target="_blank" rel="noreferrer">App Store</a>
+        <a href="https://tianxin1.github.io/AquaStep-Privacy/Privacy.html" target="_blank" rel="noreferrer">Privacy Policy</a>
+      </div>
+    </footer>
+  </div>
 </body>
 </html>
